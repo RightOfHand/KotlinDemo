@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <include android:id="@+id/top" layout="@layout/tool_bar"/>
+
+    <com.aicai.lib.component.util.imageClip.ClipImageView
+        android:id="@+id/clip_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:civClipCircle="false"
+        android:layout_below="@+id/top"
+        app:civClipPadding="@dimen/margin_middle"
+        app:civHeight="2"
+        app:civMaskColor="@color/little_black"
+        app:civWidth="3" />
+
+</RelativeLayout>

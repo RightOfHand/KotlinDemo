@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_progress">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <app.songy.com.global_base.component.widget.progress.ProgressImage
+            android:id="@+id/progress"
+            android:layout_width="33.3dp"
+            android:layout_height="33.3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dip"
+            android:indeterminate="false"
+            app:pointColor="#FFd7d7d7" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="15dip"
+            android:text="加载中..."
+            android:textColor="#FFd7d7d7" />
+    </LinearLayout>
+</RelativeLayout>
